@@ -3,3 +3,4 @@ zsh-users/zsh-completions
 wting/autojump
 zsh-users/zsh-autosuggestions
 romkatv/powerlevel10k
+lukechilds/zsh-nvm

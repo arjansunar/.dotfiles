@@ -11,7 +11,6 @@ nix-env -iA \
     nixpkgs.git \
     nixpkgs.stow \
     nixpkgs.yarn \
-    nixpkgs.nvm \
 
 # stow dotfiles
 stow zsh
