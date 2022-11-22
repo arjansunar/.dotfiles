@@ -20,7 +20,4 @@ export NVM_DIR="$HOME/.nvm"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # aliases 
-# open vpn aliases
-alias -g vpn="openvpn3"
-alias vpn-start="openvpn3 session-start --config $HOME/Documents/vpn-settings/arjan.ovpn"
-alias vpn-close="openvpn3 session-manage -D --config $HOME/Documents/vpn-settings/arjan.ovpn"
+
