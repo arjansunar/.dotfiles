@@ -24,3 +24,6 @@ export NVM_DIR="$HOME/.nvm"
 alias -g vpn="openvpn3"
 alias vpn-start="openvpn3 session-start --config $HOME/Documents/vpn-settings/arjan.ovpn"
 alias vpn-close="openvpn3 session-manage -D --config $HOME/Documents/vpn-settings/arjan.ovpn"
+
+# lazygit
+alias -g lg="lazygit"
