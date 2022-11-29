@@ -2,7 +2,7 @@
 # curl -L https://nixos.org/nix/install | sh
 
 # source nix 
-. ~/.nix-profile/etc/profile.d/nix.sh
+# . ~/.nix-profile/etc/profile.d/nix.sh
 
 # install packages from nix 
 nix-env -iA \
@@ -10,6 +10,7 @@ nix-env -iA \
     nixpkgs.git \
     nixpkgs.stow \
     nixpkgs.yarn \
+    nixpkgs.neovim \
 
 # stow dotfiles
 stow zsh
