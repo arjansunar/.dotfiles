@@ -6,19 +6,27 @@
 
 # install packages from nix 
 nix-env -iA \
-    nixpkgs.zsh \
+    nixpkgs.fish \ 
     nixpkgs.git \
     nixpkgs.stow \
     nixpkgs.yarn \
     nixpkgs.neovim \
+    nixpkgs.tmux \
+    nix-env -iA nixpkgs.exa \
+
+    # nixpkgs.zsh \
 
 # stow dotfiles
 stow zsh
 stow nvm
+stow tmux
 
-# add zsh to valid login shells 
-command -v zsh | sudo tee -a /etc/shells
+# add fish to valid login shells 
+command -v fish | sudo tee -a /etc/shells
 
-# add zsh as default shell 
-sudo chsh -s $(which zsh) $USER
+# add fish as default shell 
+sudo chsh -s $(which fish) $USER
+
+# install fisher (package manager)
+curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 
