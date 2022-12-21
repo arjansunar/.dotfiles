@@ -6,16 +6,14 @@ curl -L https://nixos.org/nix/install | sh
 
 # install packages from nix 
 nix-env -iA \
-    nixpkgs.fish \ # shell
-    nixpkgs.stow \ # stowing packages
-    nixpkgs.yarn \ # node package builder
-    nixpkgs.tmux \ # terminal multiplexer
-    nixpkgs.exa \  # better ls
-    nixpkgs.bat \  # better cat
-    nixpkgs.gdu \  # file explorer in terminal
-    nixpkgs.lazygit \ # git actions from terminal
-
-    # nixpkgs.zsh \
+    nixpkgs.fish \
+    nixpkgs.stow \
+    nixpkgs.yarn \
+    nixpkgs.tmux \
+    nixpkgs.exa \
+    nixpkgs.bat \
+    nixpkgs.gdu \
+    nixpkgs.lazygit 
 
 # stow dotfiles
 stow tmux
