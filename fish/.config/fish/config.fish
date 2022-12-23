@@ -5,8 +5,8 @@ set -U fish_greeting ""
 alias ls="exa -l -g --icons"
 # open vpn aliases
 alias vpn="openvpn3"
-alias vpn-start="openvpn3 session-start --config $HOME/Documents/work/vpn-settings/arjan.ovpn"
-alias vpn-close="openvpn3 session-manage -D --config $HOME/Documents/work/vpn-settings/arjan.ovpn"
+alias vpn-s="openvpn3 session-start --config $HOME/Documents/work/vpn-settings/arjan.ovpn"
+alias vpn-c="openvpn3 session-manage -D --config $HOME/Documents/work/vpn-settings/arjan.ovpn"
 
 # deno 
 # export DENO_INSTALL="~/.deno"
