@@ -33,7 +33,9 @@ export PATH="$HOME/.local/share/neovim/bin:$PATH"
 
 # pnpm
 set -gx PNPM_HOME "/home/rjan/.local/share/pnpm"
-set -gx PATH "$PNPM_HOME" $PATH
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
 # pnpm end
 
 # Created by `pipx` on 2022-12-30 02:23:56
