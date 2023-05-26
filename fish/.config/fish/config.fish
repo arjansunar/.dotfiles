@@ -29,7 +29,7 @@ alias dms-r="z main && dms-c && dms-s"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # nvim using bob nvim version manager
-export PATH="$HOME/.local/share/neovim/bin:$PATH"
+export PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
 
 # pnpm
 set -gx PNPM_HOME "/home/rjan/.local/share/pnpm"
@@ -40,3 +40,13 @@ end
 
 # Created by `pipx` on 2022-12-30 02:23:56
 set PATH $PATH /home/rjan/.local/bin
+
+# tmuxifier
+export PATH="$HOME/.tmuxifier/bin:$PATH"
+eval (tmuxifier init - fish)
+
+
+# Set default editors
+export VISUAL=nvim
+export EDITOR="$VISUAL"
+
