@@ -14,8 +14,11 @@ alias vpn-c="openvpn3 session-manage -D --config $HOME/Documents/work/vpn-settin
 alias vim="nvim"
 alias nv="nvim"
 alias vi="nvim"
+
 # open nvim 
 alias ncd="nvim ." # in current directory
+
+alias rj="NVIM_APPNAME=Rjanidor nvim"
 
 # lazygit alias 
 alias gg="lazygit"
@@ -34,7 +37,7 @@ export PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
 # pnpm
 set -gx PNPM_HOME "/home/rjan/.local/share/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
+    set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
 
@@ -49,4 +52,3 @@ eval (tmuxifier init - fish)
 # Set default editors
 export VISUAL=nvim
 export EDITOR="$VISUAL"
-
