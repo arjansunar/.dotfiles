@@ -1,5 +1,19 @@
+#####################
+# Custom functions
+function source_venv
+    set venv_path ".venv/bin/activate.fish"
+    echo $venv_path
+    if test -f "$venv_path"
+        source $venv_path
+    end
+end
+####################
+
 # gretting message 
 set -U fish_greeting ""
+
+# source fish config
+alias sof="source ~/.config/fish/config.fish"
 
 # aliases 
 alias ls="exa -l -g --icons"
@@ -16,7 +30,7 @@ alias nv="nvim"
 alias vi="nvim"
 
 # open nvim 
-alias ncd="nvim ." # in current directory
+alias ncd="source_venv && nvim ." # in current directory
 
 alias rj="NVIM_APPNAME=Rjanidor nvim"
 
@@ -27,6 +41,7 @@ alias gg="lazygit"
 alias dms-s="z main && TAG=dev make dev"
 alias dms-c="z main && TAG=dev make stop"
 alias dms-r="z main && dms-c && dms-s"
+
 
 # cargo 
 export PATH="$HOME/.cargo/bin:$PATH"
