@@ -70,3 +70,6 @@ export PATH="$PATH:/usr/local/go/bin"
 # Set default editors
 export VISUAL=nvim
 export EDITOR="$VISUAL"
+
+# direnv => take control of env variables
+direnv hook fish | source
