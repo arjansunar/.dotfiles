@@ -63,6 +63,9 @@ set PATH $PATH /home/rjan/.local/bin
 export PATH="$HOME/.tmuxifier/bin:$PATH"
 eval (tmuxifier init - fish)
 
+# go installation
+export PATH="$PATH:/usr/local/go/bin"
+
 
 # Set default editors
 export VISUAL=nvim
