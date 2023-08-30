@@ -36,6 +36,7 @@ alias rj="NVIM_APPNAME=Rjanidor nvim"
 
 # lazygit alias 
 alias gg="lazygit"
+alias ld="lazydocker"
 
 # work
 alias dms-s="z main && TAG=dev make dev"
@@ -65,6 +66,9 @@ eval (tmuxifier init - fish)
 
 # go installation
 export PATH="$PATH:/usr/local/go/bin"
+export GOPATH="$HOME/go/"
+export GOBIN="$GOPATH/bin"
+export PATH="$PATH:$GOBIN"
 
 
 # Set default editors
