@@ -2,7 +2,6 @@
 # Custom functions
 function source_venv
     set venv_path ".venv/bin/activate.fish"
-    echo $venv_path
     if test -f "$venv_path"
         source $venv_path
     end
