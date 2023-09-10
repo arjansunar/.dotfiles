@@ -38,8 +38,8 @@ alias gg="lazygit"
 alias ld="lazydocker"
 
 # work
-alias dms-s="z main && TAG=dev make dev"
-alias dms-c="z main && TAG=dev make stop"
+alias dms-s="z main && TAG=dev APP_URL=http://dms-ar:8443/ make dev"
+alias dms-c="z main && TAG=dev APP_URL=http://dms-ar:8443/ make stop"
 alias dms-r="z main && dms-c && dms-s"
 
 
