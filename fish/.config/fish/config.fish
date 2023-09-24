@@ -34,8 +34,10 @@ alias vi="nvim"
 
 # open nvim 
 alias ncd="source_venv && nvim ." # in current directory
-
 alias rj="NVIM_APPNAME=Rjanidor nvim"
+
+# docker 
+alias dprune="docker system prune && docker volume prune && docker network prune"
 
 # lazygit alias 
 alias gg="lazygit"
