@@ -10,6 +10,11 @@ end
 function gch
     git checkout $( git branch | fzf | sed 's/.* //' | tr -d '[:space:]' )
 end
+
+# remote git PRs checkout
+function grch
+    gh pr list | fzf --preview "gh pr view {+1}" | awk '{ print $1}' | xargs -I {} gh pr checkout {}
+end
 ####################
 
 # gretting message 
