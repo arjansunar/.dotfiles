@@ -3,6 +3,11 @@ keybinds clear-defaults=true {
     normal {
         // uncomment this and adjust key if using copy_on_select=false
         // bind "Alt c" { Copy; }
+       bind "Alt g" {
+          Run "zellij" "run" "--floating" "--close-on-exit" "--" "lazygit" {
+             close_on_exit true
+          }
+       }
     }
     locked {
         bind "Ctrl k" { SwitchToMode "Normal"; }
