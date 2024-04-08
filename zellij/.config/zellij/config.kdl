@@ -10,10 +10,10 @@ keybinds clear-defaults=true {
        }
     }
     locked {
-        bind "Ctrl k" { SwitchToMode "Normal"; }
+        bind "Ctrl ]" { SwitchToMode "Normal"; }
     }
     resize {
-        bind "Ctrl r" { SwitchToMode "Normal"; }
+        bind "Alt r" { SwitchToMode "Normal"; }
         bind "h" "Left" { Resize "Increase Left"; }
         bind "j" "Down" { Resize "Increase Down"; }
         bind "k" "Up" { Resize "Increase Up"; }
@@ -150,7 +150,7 @@ keybinds clear-defaults=true {
         bind "x" { CloseFocus; SwitchToMode "Normal"; }
     }
     shared_except "locked" {
-        bind "Ctrl k" { SwitchToMode "Locked"; }
+        bind "Ctrl ]" { SwitchToMode "Locked"; }
         bind "Ctrl q" { Quit; }
         bind "Alt n" { NewPane; }
         bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
@@ -169,7 +169,7 @@ keybinds clear-defaults=true {
         bind "Ctrl a" { SwitchToMode "Pane"; }
     }
     shared_except "resize" "locked" {
-        bind "Ctrl r" { SwitchToMode "Resize"; }
+        bind "Alt r" { SwitchToMode "Resize"; }
     }
     shared_except "scroll" "locked" {
         bind "Alt s" { SwitchToMode "Scroll"; }

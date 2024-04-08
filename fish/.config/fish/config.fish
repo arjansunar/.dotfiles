@@ -17,6 +17,19 @@ function grch
 end
 ####################
 
+####################### 
+# Abbreviations
+#######################
+# work
+abbr --add dmr TAG=dev make restart
+abbr --add dms TAG=dev make stop
+# docker 
+abbr dpr "docker system prune -f && docker volume prune -f"
+abbr dlg docker container logs -f
+####################### 
+#/Abbreviations
+#######################
+
 # gretting message 
 set -U fish_greeting ""
 
@@ -40,9 +53,10 @@ alias vi="nvim"
 # open nvim 
 alias ncd="source_venv && nvim ." # in current directory
 alias rj="NVIM_APPNAME=Rjanidor nvim"
+alias ch="NVIM_APPNAME=chad nvim"
+alias lz="NVIM_APPNAME=Lazy nvim"
+alias asn="NVIM_APPNAME=Astro nvim"
 
-# docker 
-alias dprune="docker system prune -f && docker volume prune -f"
 
 # lazygit alias 
 alias gg="lazygit"
@@ -53,6 +67,8 @@ alias dms-s="z main && TAG=dev APP_URL=http://dms-ar:8443/ make dev"
 alias dms-c="z main && TAG=dev APP_URL=http://dms-ar:8443/ make stop"
 alias dms-r="z main && dms-c && dms-s"
 
+# zellij 
+alias jel="zellij"
 
 # cargo 
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -87,3 +103,4 @@ export EDITOR="$VISUAL"
 
 # direnv => take control of env variables
 direnv hook fish | source
+starship init fish | source
