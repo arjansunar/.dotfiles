@@ -1,0 +1,145 @@
+clear
+ls
+bat 
+bat test.xml
+clear
+nvim
+clear
+gg
+clear
+fish
+clear
+ls
+new 
+clear
+exit
+clear
+exit
+cl
+clear
+exit
+lazygit
+clear
+exit
+z 
+clear
+cargo
+cargo install zoxide
+zoxide --help
+zoxide init
+zoxide init nu
+zoxide init nushell
+cd .config/nushell/
+ls
+bat config.nu
+nc config.nu
+nvim config.nu
+nvim
+ncd
+nvim
+cargo install --list 
+bob 
+bob use lsts
+bob use lts
+bob install lts
+bob install stable
+nvim
+bob use stable
+bob list
+bob --help
+bob rm v0.9.0
+bob rm v0.9.4
+bob rm v0.9.1
+bob list
+clear
+zoxide init nushell
+ls
+zoxide init nushell | save -f ./zoxide.nu
+ls
+nv
+nvim
+neovim
+vim
+clear
+env
+where nvim
+where
+where cargo
+which cargo
+ls /home/rjan/.local/bin/
+bob list
+bob --help
+bob complete
+bob complete nushell
+bob sync
+ls -al 
+cd
+ls -al 
+bob install stable 
+$env
+$env.PATH = ($env.PATH | split row (char esep) | append '/home/rjan/.local/share/bob/nvim-bin/nvim')
+$env | grep nvim
+$env 
+clear
+echo $PATH
+echo $env.PATH
+nvim
+which nvim
+which bob
+go
+clear
+exit
+alacritty 
+clear
+ext
+exit
+fish
+cl
+clear
+exit
+cl
+exit
+$env.PATH 
+zoxide init nushell 
+clear
+exit
+$nu.env-path
+clear
+zoxide Pictures/
+zoxide --help
+clear
+exit
+$env.PATH 
+nvim
+.local/share/bob/nvim-bin/nvim
+nvim
+clear
+exit
+nvim
+clear
+exit
+z .dotfiles
+clear
+z
+which z
+z .dotfiles
+clear
+ls
+ls fish
+ls -al fish
+ls -al fish/.config
+mkdir --help
+exit
+ckear
+exut
+exit
+mkdir -v nushell
+mkdir -v nushell/.config/nushell
+clear
+ls
+ls .config
+cd .config
+clear
+ls
+ls nushell
+clear
