@@ -9,7 +9,7 @@
 # All imports must either be absolute paths starting with `/`, or paths relative
 # to the user's home directory starting with `~/`.
 import:
-  - ~/.alacritty-colorscheme/themes/rose-pine.yaml
+  - ~/.alacritty-colorscheme/themes/tokyo-night.yaml
 
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
@@ -427,8 +427,8 @@ draw_bold_text_with_bright_colors: true
 # Default:
 #   - (Linux/BSD/macOS) `$SHELL` or the user's login shell, if `$SHELL` is unset
 #   - (Windows) powershell
-#shell:
-#  program: /bin/bash
+shell:
+  program: /home/rjan/.cargo/bin/nu
 #  args:
 #    - --login
 
