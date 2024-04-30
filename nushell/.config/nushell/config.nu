@@ -865,3 +865,5 @@ $env.config = {
     ]
 }
 
+use ~/.cache/starship/init.nu
+source ($nu.default-config-dir | path join 'zoxide.nu')
