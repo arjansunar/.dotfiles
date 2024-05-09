@@ -86,10 +86,6 @@ end
 # Created by `pipx` on 2022-12-30 02:23:56
 set PATH $PATH /home/rjan/.local/bin
 
-# tmuxifier
-export PATH="$HOME/.tmuxifier/bin:$PATH"
-eval (tmuxifier init - fish)
-
 # go installation
 export PATH="$PATH:/usr/local/go/bin"
 export GOPATH="$HOME/go/"
@@ -101,6 +97,4 @@ export PATH="$PATH:$GOBIN"
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
-# direnv => take control of env variables
-direnv hook fish | source
 starship init fish | source
