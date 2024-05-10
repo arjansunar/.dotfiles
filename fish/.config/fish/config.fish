@@ -37,7 +37,7 @@ set -U fish_greeting ""
 alias sof="source ~/.config/fish/config.fish"
 
 # aliases 
-alias ls="exa -l -g --icons"
+alias ls="eza -l -g --icons"
 alias cl="clear"
 
 # open vpn aliases
@@ -98,3 +98,5 @@ export VISUAL=nvim
 export EDITOR="$VISUAL"
 
 starship init fish | source
+mise activate fish | source
+zoxide init fish | source
