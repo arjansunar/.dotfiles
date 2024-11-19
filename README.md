@@ -48,6 +48,14 @@ sudo dnf update
 sudo dnf group install development tools
 ```
 
+### Pass
+
+```fish
+ sudo yum install pass
+ pass init <gpg key>
+ pass git clone https://github.com/arjansunar/pass
+```
+
 ### Cargo
 
 ```fish
