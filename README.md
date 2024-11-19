@@ -44,11 +44,41 @@
 ## Fedora
 
 ```
-sudo dnf update 
-sudo dnf group install development tools 
+sudo dnf update
+sudo dnf group install development tools
 ```
 
+### Cargo
 
+```fish
+cargo install cargo-binstall
+```
 
+```fish
+cargo binstall eza zellij bat alacrity bob-nvim kanata just startship zoxide mise
+```
 
+### Mise
 
+```fish
+mise use go node python@3.12
+```
+
+### Go
+
+- [Lazygit](https://github.com/jesseduffield/lazygit?tab=readme-ov-file#go)
+
+```fish
+go install github.com/jesseduffield/lazygit@latest
+```
+
+### Python stuffs
+
+```fish
+python3 -m pip install --user pipx
+python3 -m pipx ensurepath
+```
+
+```fish
+pipx install poetry
+```
