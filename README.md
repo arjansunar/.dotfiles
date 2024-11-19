@@ -40,3 +40,15 @@
    ```
 
 2. Install [neovim v8.0](https://github.com/neovim/neovim/releases/tag/v0.8.0) and [astrovim](https://astronvim.github.io/)
+
+## Fedora
+
+```
+sudo dnf update 
+sudo dnf group install development tools 
+```
+
+
+
+
+
