@@ -52,10 +52,6 @@ alias vi="nvim"
 
 # open nvim 
 alias ncd="source_venv && nvim ." # in current directory
-alias rj="NVIM_APPNAME=Rjanidor nvim"
-alias ch="NVIM_APPNAME=chad nvim"
-alias lz="NVIM_APPNAME=Lazy nvim"
-alias asn="NVIM_APPNAME=Astro nvim"
 
 
 # lazygit alias 
