@@ -23,6 +23,8 @@ end
 # work
 abbr --add dmr TAG=dev make restart
 abbr --add dms TAG=dev make stop
+abbr --add kcrm 'z crm && just stop-dev& && z crm && just stop-dev& && z comm & just stop-dev& && z dms && TAG=dev make stop&'
+
 # docker 
 abbr dpr "docker system prune -f && docker volume prune -f"
 abbr dlg docker container logs -f
