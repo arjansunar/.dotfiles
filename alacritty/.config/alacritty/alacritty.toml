@@ -14,7 +14,5 @@ startup_mode = "Maximized"
 dynamic_title = true
 opacity = 0.8
 
-[terminal]
-
 [terminal.shell]
 program = "zellij"
