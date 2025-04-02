@@ -3,27 +3,22 @@
 )
 
 (defsrc
-  caps a s d f           
-  lsft rsft
-  rctl
+  caps h j k l           
+  v
+  lctl
 )
 
 (deflayer default
-  @cap _ _ _ _ 
-  _ _
-  @rctl       
+  lctl _ _ _ _ 
+  @v       
+  caps
 )
 (deflayer arrows
   _ left down up rght          
-  _ _
+  _ 
   _
+  
 )
 (defalias
-  cap (tap-hold-press 200 200 caps lctl) 
-  rctl (tap-hold-press 200 200 rctl (layer-while-held arrows))
+  v (tap-hold-press 200 200 v (layer-toggle arrows))
 )
-
-
-
-
-
