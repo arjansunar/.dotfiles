@@ -1,32 +1,29 @@
-;; Caps to escape/control configuration for Kanata
-
 (defcfg
   process-unmapped-keys yes
 )
 
 (defsrc
-  caps a s d f j k l ;
-  lctl
+  caps a s d f           
+  lsft rsft
+  rctl
 )
 
-(defvar
-  tap-time 200
-  hold-time 200
+(deflayer default
+  @cap _ _ _ _ 
+  _ _
+  @rctl       
 )
-
+(deflayer arrows
+  _ left down up rght          
+  _ _
+  _
+)
 (defalias
-  escctrl (tap-hold 70 70 esc lctl)
-  a (tap-hold $tap-time $hold-time a lmet)
-  s (tap-hold $tap-time $hold-time s lalt)
-  d (tap-hold $tap-time $hold-time d lsft)
-  f (tap-hold $tap-time $hold-time f lctl)
-  j (tap-hold $tap-time $hold-time j rctl)
-  k (tap-hold $tap-time $hold-time k rsft)
-  l (tap-hold $tap-time $hold-time l ralt)
-  ; (tap-hold $tap-time $hold-time ; rmet)
+  cap (tap-hold-press 200 200 caps lctl) 
+  rctl (tap-hold-press 200 200 rctl (layer-while-held arrows))
 )
 
-(deflayer base
-  lctl @a @s @d @f @j @k @l @;
-  caps
-)
+
+
+
+
