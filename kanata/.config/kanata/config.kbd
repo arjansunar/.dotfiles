@@ -3,22 +3,21 @@
 )
 
 (defsrc
+  tab
   caps h j k l           
-  v
   lctl
 )
 
 (deflayer default
+  @arr-on
   lctl _ _ _ _ 
-  @v       
   caps
 )
 (deflayer arrows
+  tab      
   _ left down up rght          
-  _ 
   _
-  
 )
 (defalias
-  v (tap-hold-press 200 200 v (layer-toggle arrows))
+  arr-on (tap-hold-press 300 300 tab (layer-toggle arrows))
 )
