@@ -1,7 +1,7 @@
 # Run `ghostty +show-config --default --docs` to view a list of
 # all available config options and their default values.
 
-font-family        =  Iosevka Nerd Font
+font-family        =  Iosevka Term Nerd Font
 window-padding-x   =  2
 maximize           =  true
 window-decoration  =  false
