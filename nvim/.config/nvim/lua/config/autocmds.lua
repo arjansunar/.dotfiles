@@ -9,7 +9,7 @@ vim.api.nvim_create_autocmd("FileType", {
   group = "JSLog",
   pattern = { "javascript", "typescript", "typescriptreact" },
   callback = function()
-    vim.fn.setreg("l", "yoconsole.log({" .. esc .. "p}")
+    vim.fn.setreg("l", "yoconsole.log({" .. esc .. "p})")
   end,
 })
 
