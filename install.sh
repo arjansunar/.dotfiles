@@ -1,32 +1,37 @@
-# install nix package manager 
+# install nix package manager
 curl -L https://nixos.org/nix/install | sh
 
-# # source nix 
+# # source nix
 . ~/.nix-profile/etc/profile.d/nix.sh
 
-# install packages from nix 
+# install packages from nix
 nix-env -iA \
-    nixpkgs.fish \
-    nixpkgs.stow \
-    nixpkgs.tmux \
-    nixpkgs.exa \
-    nixpkgs.bat \
-    nixpkgs.gdu \
-    nixpkgs.lazygit \
-    nixpkgs.lazydocker \
-    nixpkgs.nodePackages_latest.pnpm
+  nixpkgs.ghostty \
+  nixpkgs.fish \
+  nixpkgs.stow
 
-# stow dotfiles
-stow tmux
-stow fish
-
-# add fish to valid login shells 
+# add fish to valid login shells
 command -v fish | sudo tee -a /etc/shells
 
-# add fish as default shell 
+# add fish as default shell
 sudo chsh -s $(which fish) $USER
 
-# install fisher (package manager)
-curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+# setup rust
+echo "Installing rust..."
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-# install neovim 8.0 and astrovim 
+# Cargo packages
+cargo install cargo-binstall
+cargo binstall eza zellij bat alacritty bob-nvim kanata just starship zoxide mise
+
+# Mise packages
+mise use go node python@3.12
+
+# Go packages
+go install github.com/jesseduffield/lazygit@latest
+
+# stow dotfiles
+stow fish
+stow kanata
+stow nvim
+stow zellij
