@@ -66,7 +66,7 @@ cargo install cargo-binstall
 ```
 
 ```fish
-cargo binstall eza zellij bat alacrity bob-nvim kanata just startship zoxide mise
+cargo binstall eza zellij bat alacritty bob-nvim kanata just starship zoxide mise
 ```
 
 ### Mise
