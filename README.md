@@ -9,9 +9,11 @@
   ```
 
 - download git
+
   ```bash
   sudo apt-get install git
   ```
+
 - clone repo
 
   ```bash
@@ -27,6 +29,7 @@
   ```
 
 - run install.sh
+
   ```bash
   ./install.sh
   ```
@@ -89,4 +92,10 @@ python3 -m pipx ensurepath
 
 ```fish
 pipx install poetry
+```
+
+### Setting kanata
+
+```
+https://github.com/jtroo/kanata/blob/main/docs/setup-linux.md
 ```
