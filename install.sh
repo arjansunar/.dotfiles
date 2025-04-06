@@ -12,10 +12,10 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Cargo packages
 cargo install cargo-binstall
-cargo binstall eza zellij bat alacritty bob-nvim kanata just starship zoxide mise
+cargo binstall eza zellij bat bob-nvim kanata just starship zoxide mise
 
 # Mise packages
-mise use go node python@3.12
+mise use go node python@3.12 -g
 
 # Go packages
 go install github.com/jesseduffield/lazygit@latest
