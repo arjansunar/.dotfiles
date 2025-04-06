@@ -32,6 +32,7 @@ if [ -f /etc/os-release ] && grep -iq "ubuntu" /etc/os-release; then
   stow kanata
   stow nvim
   stow zellij
+  stow mise
 
 else
   echo "This script is only compatible with Ubuntu."
