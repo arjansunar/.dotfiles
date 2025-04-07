@@ -3,16 +3,13 @@ draw_bold_text_with_bright_colors = true
 
 [font]
 size = 14
-normal = { style = "Regular", family = "Iosevka Nerd Font" }
+normal = { style = "Regular", family = "Iosevka Nerd Font Mono" }
 
 [window]
-
 dynamic_padding = false
-
+decorations = "none"
 startup_mode = "Maximized"
-
-dynamic_title = true
-opacity = 0.8
+opacity = 0.9
 
 [terminal.shell]
 program = "zellij"
