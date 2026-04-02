@@ -51,6 +51,7 @@ alias vpn-c="openvpn3 session-manage -D --config $HOME/Documents/work/vpn-settin
 alias vim="nvim"
 alias nv="nvim"
 alias vi="nvim"
+alias pde="NVIM_APPNAME=pde nvim"
 
 # open nvim 
 alias ncd="source_venv && nvim ." # in current directory
@@ -94,6 +95,7 @@ export PATH="$PATH:$GOBIN"
 # Set default editors
 export VISUAL=nvim
 export EDITOR="$VISUAL"
+export SUDO_EDITOR="$VISUAL"
 
 starship init fish | source
 mise activate fish | source
